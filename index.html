@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPass - Advanced Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CyberPass</h1>
+            <p>High-Entropy Password Generator</p>
+        </header>
+        
+        <div class="password-display-container">
+            <input type="text" id="passwordDisplay" value="P4$5W0rD!" readonly>
+            <button class="copy-btn" id="copyBtn" aria-label="Copy Password">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+            <span class="copied-msg" id="copiedMsg">Copied!</span>
+        </div>
+
+        <div class="strength-container">
+            <p>Strength: <span id="strengthText">Medium</span></p>
+            <div class="strength-bar-bg">
+                <div class="strength-bar" id="strengthBar"></div>
+            </div>
+        </div>
+
+        <form id="passwordForm">
+            <div class="form-group">
+                <label for="characterAmountRange">Password Length: <span id="characterAmountNumber">12</span></label>
+                <input type="range" min="6" max="32" value="12" id="characterAmountRange" class="range-slider">
+            </div>
+
+            <div class="options-grid">
+                <div class="checkbox-control">
+                    <input type="checkbox" id="includeUppercase" checked>
+                    <label for="includeUppercase">Uppercase (A-Z)</label>
+                </div>
+
+                <div class="checkbox-control">
+                    <input type="checkbox" id="includeNumbers" checked>
+                    <label for="includeNumbers">Numbers (0-9)</label>
+                </div>
+
+                <div class="checkbox-control">
+                    <input type="checkbox" id="includeSymbols" checked>
+                    <label for="includeSymbols">Symbols (!@#$)</label>
+                </div>
+            </div>
+
+            <button type="submit" class="generate-btn">
+                Generate Secure Password <i class="fa-solid fa-shield-halved"></i>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
