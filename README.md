@@ -2,14 +2,10 @@
 
 CyberPass is a **modern, client-side password generator** built with pure HTML, CSS, and JavaScript. It creates strong, high-entropy passwords with real-time strength feedback, customizable options, and one-click copy functionality.
 
-Perfect for anyone who needs secure passwords quickly — without trusting third-party services.
 
-![CyberPass Screenshot](https://via.placeholder.com/800x400?text=CyberPass+Screenshot)  
-*(Replace this placeholder with an actual screenshot later — see instructions below)*
 
 ## Live Demo
-- https://immortal4728.github.io/Password-Generator/  (GitHub Pages – if you enabled it)  
-- Or your Netlify URL (e.g., https://cyberpass-rishi.netlify.app) once deployed
+- https://immortal4728.github.io/Password-Generator 
 
 Try it live and generate unbreakable passwords instantly!
 
@@ -27,7 +23,3 @@ Try it live and generate unbreakable passwords instantly!
 - **JavaScript (Vanilla)** – Logic for generation, strength calculation, copy feature
 - External: Font Awesome (via CDN) for icons
 
-## How to Use Locally
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/ImmortAl4728/Password-Generator.git
